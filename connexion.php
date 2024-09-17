@@ -6,9 +6,9 @@
     <title>Connexion</title>
 </head>
 <body>
-    <form action="homepage.php" method="post" class="form" id="form">
-        <input type="text" name="pseudo" id="pseudo" placeholder="Nom utilisateur">
-        <input type="text" name="mdp" id="mdp" placeholder="Mot de passe">
+    <form action="sum_connexion.php" method="post" class="form" id="form">
+        <input type="text" name="user_name" id="user_name" placeholder="Nom utilisateur">
+        <input type="text" name="user_pwd" id="user_pwd" placeholder="Mot de passe">
         <button type="submit" id="btn-connexion">Connexion</button>
     </form>
 </body>

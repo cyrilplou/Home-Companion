@@ -1,15 +1,19 @@
+<?php
+require_once(__DIR__.'/usersdata.php'); 
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hom-E</title>
-    <link rel="stylesheet" href="styleHP.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="css/styleHP.css">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
     <section class="header">
-    <img src="images\onoff.png" alt="bouton on off">
+    <a href="index.php"><img src="images\onoff.png" alt="bouton on off"></a>
     </section>
     <section class="main">
         <div class="menu">
@@ -19,7 +23,7 @@
         </div>
         <div class="btn-home" id="btn-home">
             <img src="/Home-Companion/images/home-btn.png" alt="">
-            <p class="titre">Hom'E</p>
+             <p class="titre"><?php $_SESSION['LOGGED_USER']?></p> 
         </div>
     </section>
     <section class="fiches">

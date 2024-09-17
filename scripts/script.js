@@ -6,5 +6,4 @@ form.style.display='none';
 btnhome.addEventListener("click", ()=>{
     btnhome.style.margin='20%'
     form.style.display='';
-
 })

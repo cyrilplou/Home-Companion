@@ -1,0 +1,53 @@
+@media (width < 800px){
+
+body{
+    background-image: url(/Home-Companion/images/mobile-BG.png);
+    background-size: cover;
+
+}
+.connexion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70%;
+}
+.btn-home img{
+    
+    width: 150px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px black;
+}
+.titre{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 5px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top: -50px;
+    width: 230px;
+}
+.form input {
+    border-radius: 10px;
+    border: none;
+    height: 35px;
+    margin: 5px 0px;
+}
+.form button{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+}
+}

@@ -6,7 +6,7 @@
     <title>Connexion</title>
 </head>
 <body>
-    <form action="index.php" method="post" class="form" id="form">
+    <form action="homepage.php" method="post" class="form" id="form">
         <input type="text" name="pseudo" id="pseudo" placeholder="Nom utilisateur">
         <input type="text" name="mdp" id="mdp" placeholder="Mot de passe">
         <button type="submit" id="btn-connexion">Connexion</button>

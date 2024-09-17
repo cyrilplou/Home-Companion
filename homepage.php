@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hom-E</title>
+    <link rel="stylesheet" href="styleHP.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="header">
+    <img src="images\onoff.png" alt="bouton on off">
+    </section>
+    <section class="main">
+        <div class="menu">
+            <a href=""><img src="images\agenda.png" alt="logo agenda"></a>
+            <a href=""><img src="images\compte.png" alt="logo barre compte"></a>
+            <a href=""><img src="images\courses.png" alt="logo courses"></a>
+        </div>
+        <div class="btn-home" id="btn-home">
+            <img src="/Home-Companion/images/home-btn.png" alt="">
+            <p class="titre">Hom'E</p>
+        </div>
+    </section>
+    <section class="fiches">
+
+    </section>
+    
+</body>
+</html>
+

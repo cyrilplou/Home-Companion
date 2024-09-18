@@ -20,7 +20,7 @@ require_once(__DIR__.'/usersdata.php');
         <div class="menu">
             <a href=""><img src="images\agenda.png" alt="logo agenda" id="agenda"></a>
             <a href=""><img src="images\compte.png" alt="logo barre compte" id="compte"></a>
-            <a href=""><img src="images\courses.png" alt="logo courses" id="shopping"></a>
+            <a href="apps\shopping_app\shopping.php"><img src="images\courses.png" alt="logo courses" id="shopping"></a>
         </div>
         <div class="btn-home" id="btn-home">
             <img src="/Home-Companion/images/home-btn.png" alt="">

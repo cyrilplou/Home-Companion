@@ -5,4 +5,3 @@ function redirectToUrl(string $url):never
     exit();
 };
 
-?>

@@ -1,7 +1,8 @@
 <?php
+session_start();
 require_once(__DIR__.'/usersdata.php'); 
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,17 +14,17 @@ require_once(__DIR__.'/usersdata.php');
 </head>
 <body>
     <section class="header">
-    <a href="index.php"><img src="images\onoff.png" alt="bouton on off"></a>
+        <a href="index.php"><img src="images\onoff.png" alt="bouton on off"></a>
     </section>
     <section class="main">
         <div class="menu">
-            <a href=""><img src="images\agenda.png" alt="logo agenda"></a>
-            <a href=""><img src="images\compte.png" alt="logo barre compte"></a>
-            <a href=""><img src="images\courses.png" alt="logo courses"></a>
+            <a href=""><img src="images\agenda.png" alt="logo agenda" id="agenda"></a>
+            <a href=""><img src="images\compte.png" alt="logo barre compte" id="compte"></a>
+            <a href=""><img src="images\courses.png" alt="logo courses" id="shopping"></a>
         </div>
         <div class="btn-home" id="btn-home">
             <img src="/Home-Companion/images/home-btn.png" alt="">
-             <p class="titre"><?php $_SESSION['LOGGED_USER']?></p> 
+             <p class="titre"><?php echo $_SESSION['LOGGED_USER']?></p> 
         </div>
     </section>
     <section class="fiches">

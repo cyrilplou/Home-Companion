@@ -10,4 +10,3 @@ try {
 } catch (Exception $exception) {
     die('Erreur : ' . $exception->getMessage());
 }
-?>

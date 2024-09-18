@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 require_once(__DIR__.'/databaseconnect.php');
 
@@ -9,4 +8,3 @@ $usersStatement = $mysqlClient->prepare($sqlQuery);
 $usersStatement->execute();
 $users = $usersStatement->fetchAll();
 
-?>

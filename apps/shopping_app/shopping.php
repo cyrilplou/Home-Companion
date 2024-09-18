@@ -12,7 +12,7 @@
     </header>
     <div class="navbar">
         <img src="../../images\courses.png" alt="logo shopping" class="logo-shop">
-        <a href=""><img src="" alt=""></a>
+        <a href=""><img src="../../images\add_BTN.png" alt=""></a>
     </div>
     <section class="articles">
 

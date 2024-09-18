@@ -27,9 +27,15 @@ $list = $titleStatement->fetch();
     <section class="fiches-full">
         <h2><?php echo $title ?></h2>
         <p><?php echo $list['list'] ?></p>
-        <img class="editlist" src="../../images/pictoEdit.png" alt="EditLogo">
+        <img class="editlist" src="../../images/pictoEdit2.png" alt="EditLogo">
         <a href="shopping.php"><img class="btnAdd" src="../../images/add_BTN.png" alt=""></a>
-
+    </section>
+    <section class="containerForm">
+        <form action="sum-updateList.php" method="POST">
+            
+            <textarea name="updateList" class="updateList" id="updatesList" ><?php echo $list['list'] ?></textarea>
+            <button id="btnEdit" type="submit">Editer la liste</button>
+        </form>
     </section>
     
 </body>

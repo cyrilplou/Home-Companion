@@ -19,6 +19,7 @@ body{
 }
 .header img{
     width: 60px;
+    margin-right: 36px;
     filter: drop-shadow(0px 1px 2px black);
 }
 /* Main Section with logo annd navbar */
@@ -27,7 +28,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 10%;
 }
 .menu{
     display: flex;
@@ -40,8 +41,10 @@ body{
     width: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
+    border: solid 2px  white;
     box-shadow: 0px 1px 2px black;
+    background-color: orange;
 }
 #shopping{
     position: relative;

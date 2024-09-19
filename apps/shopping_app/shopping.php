@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hom-E</title>
-    <link rel="stylesheet" href="css\styleShopping.css">
-    <script src="scriptshopping.js" defer></script>
+    <link rel="stylesheet" href="css\style_shopping.css">
+    <script src="script_shopping.js" defer></script>
 </head>
 <body>
     <header class="headerApps">
@@ -15,9 +15,9 @@
         <img src="../../images\courses.png" alt="logo shopping" class="logo-shop">
     </div>
     <div id="formnewList">
-        <form action="sum-creatList.php"method="post" class="sumList" >
+        <form action="sum_creat_list.php"method="post" class="sumList" >
             <input type="text" name="newListName" placeholder="Créer une liste">
-            <button id="btncreat" type="submit"><img src="../../images/pictoValide.png" alt=""></button>
+            <button id="btncreat" type="submit"><img src="../../images/picto_valide.png" alt=""></button>
         </form>
     </div>
    <?php require_once(__DIR__.'/lists_shopping.php');  ?>

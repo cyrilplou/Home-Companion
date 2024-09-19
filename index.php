@@ -10,7 +10,7 @@
 <body>
     <div class="connexion" id="connexion">
         <div class="btn-home" id="btn-home">
-            <img src="/Home-Companion/images/home-btn.png" alt="">
+            <img src="/Home-Companion/images/home_btn.png" alt="">
             <p class="titre">Hom'E</p>
         </div>
         

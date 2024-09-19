@@ -1,7 +1,7 @@
 @media (width < 800px){
 
 body{
-    background-image: url(/Home-Companion/images/mobile-BG.png);
+    background-image: url(/Home-Companion/images/mobile_bg.png);
     background-size: cover;
 
 }

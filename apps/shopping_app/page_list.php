@@ -1,5 +1,5 @@
 <?php
-require_once(__DIR__.'../../../databaseconnect.php');
+require_once(__DIR__.'../../../data_base_connect.php');
 
 $title = $_GET['title'];
 $titleStatement = $mysqlClient->prepare('SELECT * FROM shopping WHERE title = :title');
@@ -15,8 +15,8 @@ $list = $titleStatement->fetch();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liste</title>
-    <link rel="stylesheet" href="css\styleShopping.css">
-    <script src="scriptshopping.js" defer></script>
+    <link rel="stylesheet" href="css\style_shopping.css">
+    <script src="script_shopping.js" defer></script>
 </head>
 <body>
     <header class="headerApps">
@@ -28,14 +28,14 @@ $list = $titleStatement->fetch();
     <section class="fiches-full">
         <h2><?php echo $title ?></h2>
         <p><?php echo nl2br($list['list']) ?></p>
-        <img class="editlist" id="logoEdit" src="../../images/pictoEdit2.png" alt="EditLogo">
-        <a href="shopping.php"><img class="btnAdd" src="../../images/add_BTN.png" alt=""></a>
+        <img class="editlist" id="logoEdit" src="../../images/picto_edit2.png" alt="EditLogo">
+        <a href="shopping.php"><img class="btnAdd" src="../../images/add_btn.png" alt=""></a>
     </section>
     <section class="containerForm" id="formEdit">
-        <form action="sum-updateList.php" method="POST">
+        <form action="sum_update_list.php" method="POST">
             <input type="text" name="namelist" id="listname" value="<?php echo $title ?>">
             <textarea name="updateList" class="updateList" id="updatesList" ><?php echo $list['list'] ?></textarea>
-            <button id="btnEdit" type="submit"><img src="../../images/pictoValide.png" alt=""></button>  
+            <button id="btnEdit" type="submit"><img src="../../images/picto_valide.png" alt=""></button>  
         </form>
     </section>
     

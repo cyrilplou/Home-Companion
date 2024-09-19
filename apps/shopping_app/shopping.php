@@ -13,7 +13,6 @@
     </header>
     <div class="navbar">
         <img src="../../images\courses.png" alt="logo shopping" class="logo-shop">
-        <img src="../../images\add_BTN.png" alt="image ajout liste" id="btncreatList">
     </div>
     <div id="formnewList">
         <form action="sum-creatList.php"method="post" class="sumList" >

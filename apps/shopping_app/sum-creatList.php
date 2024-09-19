@@ -9,7 +9,7 @@ require_once(__DIR__.'../../../databaseconnect.php');
 $namecreated = $_POST['newListName'];
 
 $createlist = $mysqlClient ->prepare ('INSERT INTO shopping (title) VALUES (:title)');
-$createtlist -> execute ([
+$createlist -> execute ([
     'title'=> $namecreated,
  
 ]);

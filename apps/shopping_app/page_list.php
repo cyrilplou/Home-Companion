@@ -19,22 +19,22 @@ $list = $titleStatement->fetch();
     <script src="script_shopping.js" defer></script>
 </head>
 <body>
-    <header class="headerApps">
+    <header class="header-apps">
         <?php require_once(__DIR__."../../header_pages.php"); ?>
     </header>
-    <div class="navbar">
+    <div class="nav-bar">
         <img src="../../images\courses.png" alt="logo shopping" class="logo-shop">
     </div>
     <section class="fiches-full">
         <h2><?php echo $title ?></h2>
         <p><?php echo nl2br($list['list']) ?></p>
-        <img class="editlist" id="logoEdit" src="../../images/picto_edit2.png" alt="EditLogo">
-        <a href="shopping.php"><img class="btnAdd" src="../../images/add_btn.png" alt=""></a>
+        <img class="edit-list" id="logoEdit" src="../../images/picto_edit2.png" alt="EditLogo">
+        <a href="shopping.php"><img class="btn-add" src="../../images/add_btn.png" alt=""></a>
     </section>
-    <section class="containerForm" id="formEdit">
+    <section class="container-form" id="formEdit">
         <form action="sum_update_list.php" method="POST">
             <input type="text" name="namelist" id="listname" value="<?php echo $title ?>">
-            <textarea name="updateList" class="updateList" id="updatesList" ><?php echo $list['list'] ?></textarea>
+            <textarea name="update-list" class="update-list" id="updatesList" ><?php echo $list['list'] ?></textarea>
             <button id="btnEdit" type="submit"><img src="../../images/picto_valide.png" alt=""></button>  
         </form>
     </section>

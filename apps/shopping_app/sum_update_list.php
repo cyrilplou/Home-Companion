@@ -7,7 +7,7 @@ require_once(__DIR__.'../../../data_base_connect.php');
 
 // Request to update existing shopping list //
 
-$newList = $_POST['updateList'];
+$newList = $_POST['update-list'];
 $nameupdate = $_POST['namelist'];
 
 $insertlist = $mysqlClient ->prepare ("UPDATE `shopping` SET list=:list WHERE title=:title");

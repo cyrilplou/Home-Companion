@@ -8,14 +8,14 @@
     <script src="script_shopping.js" defer></script>
 </head>
 <body>
-    <header class="headerApps">
+    <header class="header-apps">
         <?php require_once(__DIR__."../../header_pages.php"); ?>
     </header>
-    <div class="navbar">
+    <div class="nav-bar">
         <img src="../../images\courses.png" alt="logo shopping" class="logo-shop">
     </div>
     <div id="formnewList">
-        <form action="sum_creat_list.php"method="post" class="sumList" >
+        <form action="sum_creat_list.php"method="post" class="sum-list" >
             <input type="text" name="newListName" placeholder="Créer une liste">
             <button id="btncreat" type="submit"><img src="../../images/picto_valide.png" alt=""></button>
         </form>

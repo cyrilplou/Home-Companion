@@ -1,8 +1,3 @@
-<?php 
-require_once(__DIR__.'/shoppingdata.php');
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +5,7 @@ require_once(__DIR__.'/shoppingdata.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hom-E</title>
     <link rel="stylesheet" href="css\styleShopping.css">
+    <script src="scriptshopping.js" defer></script>
 </head>
 <body>
     <header class="headerApps">
@@ -17,22 +13,16 @@ require_once(__DIR__.'/shoppingdata.php');
     </header>
     <div class="navbar">
         <img src="../../images\courses.png" alt="logo shopping" class="logo-shop">
-        <a href=""><img src="../../images\add_BTN.png" alt=""></a>
+        <img src="../../images\add_BTN.png" alt="image ajout liste" id="btncreatList">
     </div>
-    
-    <section class="articles">
-        <?php
-        foreach($lists as $list): ?>
-            <div class="fiches" onclick="window.location.href='page_list.php?title=<?php echo $list['title']; ?>'">
-                <h2><?php echo $list['title'] ?></h2>
-                <p><?php echo $list['list'] ?></p>
-                
-            </div>
+    <div id="formnewList">
+        <form action="sum-creatList.php"method="post" class="sumList" >
+            <input type="text" name="newListName" placeholder="Créer une liste">
+            <button id="btncreat" type="submit"><img src="../../images/pictoValide.png" alt=""></button>
+        </form>
+    </div>
+   <?php require_once(__DIR__.'/lists_shopping.php');  ?>
 
-        <?php
-        endforeach ?>
-        
-    </section>
 
 </body>
 </html>

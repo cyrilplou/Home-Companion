@@ -7,17 +7,17 @@ require_once(__DIR__.'../../../usersdata.php');
 require_once(__DIR__.'../../../databaseconnect.php');
 
 
-$newList = $_POST ['updateList'];
-$nameupdate = "Boucher";
+$newList = $_POST['updateList'];
+$nameupdate = $_POST['namelist'];
 
 $insertlist = $mysqlClient ->prepare ("UPDATE `shopping` SET list=:list WHERE title=:title");
 $insertlist -> execute ([
     'list' => $newList,
-    'title'=> 'Boucher'
+    'title'=> $nameupdate,
  
 ]);
 
-    redirectToUrl('../../index.php');
+    redirectToUrl('shopping.php');
 
 ?>
           

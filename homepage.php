@@ -1,6 +1,8 @@
 <?php
 session_start();
 require_once(__DIR__.'/usersdata.php'); 
+require_once(__DIR__.'/apps\shopping_app\shoppingdata.php'); 
+
 ?>
 
 <!DOCTYPE html>
@@ -27,10 +29,7 @@ require_once(__DIR__.'/usersdata.php');
              <p class="titre"><?php echo $_SESSION['LOGGED_USER']?></p> 
         </div>
     </section>
-    <section class="fiches">
-
-    </section>
-    
+    <?php require_once(__DIR__.'/apps\shopping_app\lists_shopping.php');  ?>
 </body>
 </html>
 

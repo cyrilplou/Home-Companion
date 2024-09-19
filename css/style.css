@@ -5,7 +5,7 @@ body{
     background-size: cover;
 
 }
-/* Style for 1st page(index.php), button connexion and form */
+/* Style for the 1st page(index.php), button connexion and form */
 .connexion {
     display: flex;
     flex-direction: column;

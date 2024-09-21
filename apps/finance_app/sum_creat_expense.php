@@ -20,15 +20,11 @@ else {
 if ($username === 'Cyril' && $for === 'tous'){
     $for2 = 'mathilde';
 }
-else {
-    $for2=$_POST['for_who'];
-}
+
 if ($username === 'Mathilde' && $for === 'tous'){
     $for2 = 'cyril';
 }
-else {
-    $for2=$_POST['for_who'];
-}
+
     
 $createlist = $mysqlClient ->prepare ('INSERT INTO expenses (users_name,expense_name,price,for_who) VALUES (:username, :expense_name,:expense_price,:for_who)');
 $createlist -> execute ([

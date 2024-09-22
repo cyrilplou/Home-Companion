@@ -1,6 +1,7 @@
 <?php
 session_start();
-?>
+require_once(__DIR__.'/apps/finance_app/total_calculated.php');  ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,6 +25,11 @@ session_start();
             <img src="images/home_btn.png" alt="">
              <p class="titre"><?php echo $_SESSION['LOGGED_USER']?></p> 
         </div>
+        <section class="display_expenses_hp">
+            <div class="expenses">
+                <h3><?php echo $redevable.' doit '.$sommeargent.' € à '.$nonredevable ?> </h3>
+            </div>
+        </section>
     </section>
     <a href="apps/shopping_app/shopping.php"><?php require_once(__DIR__.'/apps/shopping_app/homepage_lists_shopping.php');  ?></a>
 </body>

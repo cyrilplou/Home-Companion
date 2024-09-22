@@ -76,9 +76,81 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px 20px;
+    align-items: center;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(1px 2px 3px black) ;
+
 }
 .form_expense input{
     margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.grp_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    width: 40px;
+
+}
+#for_who{
+    width: 60px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+
+}
+.form_expense button{
+    width: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+}
+.container_exp{
+    margin-top: 50px;
+    height: 500px;
+    overflow: scroll;
+}
+.display_expenses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+
+}
+.fiches_expenses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 2px 0px 5px black;
+
+    
+}
+.fiches_expenses h2{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    color: rgb(45, 66, 99);
+}
+.fiches_expenses p{
+    margin-top: 3px;
+    margin-bottom: 10px;
+
 }
 }

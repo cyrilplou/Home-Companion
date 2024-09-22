@@ -18,24 +18,43 @@ else {
 }
 
 if ($username === 'Cyril' && $for === 'tous'){
-    $for2 = 'mathilde';
-}
-else {
-    $for2=$_POST['for_who'];
+
+$createlist = $mysqlClient ->prepare ('INSERT INTO expenses (users_name,expense_name,price,for_who) VALUES (:username, :expense_name,:expense_price,:for_who)');
+$createlist -> execute ([
+    'username'=> $username.' (tous)',
+    'expense_name' => $expense_name,
+    'expense_price'=> $expense_price,
+    'for_who'=> 'mathilde'
+ 
+]);
+
+    redirectToUrl('expenses.php');
+
+
 }
 if ($username === 'Mathilde' && $for === 'tous'){
-    $for2 = 'cyril';
-}
-else {
-    $for2=$_POST['for_who'];
-}
+
+    $createlist = $mysqlClient ->prepare ('INSERT INTO expenses (users_name,expense_name,price,for_who) VALUES (:username, :expense_name,:expense_price,:for_who)');
+    $createlist -> execute ([
+        'username'=> $username.' (tous)',
+        'expense_name' => $expense_name,
+        'expense_price'=> $expense_price,
+        'for_who'=> 'cyril'
+
+    ]);
+    
+        redirectToUrl('expenses.php');
+    
+    
+    }
+
     
 $createlist = $mysqlClient ->prepare ('INSERT INTO expenses (users_name,expense_name,price,for_who) VALUES (:username, :expense_name,:expense_price,:for_who)');
 $createlist -> execute ([
     'username'=> $username,
     'expense_name' => $expense_name,
     'expense_price'=> $expense_price,
-    'for_who'=> $for2
+    'for_who'=> $for,
  
 ]);
 

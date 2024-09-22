@@ -39,7 +39,7 @@
 /* Style for Shopping Page */
 
 body {
-    background-image: url(/Home-Companion/images/mobile_bg.png);
+    background-image: url(../../../images/mobile_bg.png);
     background-size: cover;
 }
 .header-apps{

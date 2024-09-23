@@ -6,7 +6,7 @@ require_once(__DIR__.'/users_data.php');
 
 $username= $_POST['user_name'];
 $userpwd = $_POST['user_pwd'];
-
+// WARNING, there is no password hash actualy. Make sure to put one before deployement //
 if(!empty($_POST['chkbox'])){
     setcookie('LOGGED_USER',$username);
     setcookie('pwd',$userpwd);

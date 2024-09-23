@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +10,10 @@
 <body>
     <div class="connexion" id="connexion">
         <div class="btn-home" id="btn-home">
-            <img src="/Home-Companion/images/home_btn.png" alt="">
+            <img src="images/home_btn.png" alt="">
             <p class="titre">Hom'E</p>
         </div>
-        
+        <!-- Importing Form for users connexion -->
         <div class="formconnexion" id="formconnexion" >
             <?php require_once(__DIR__.'/form_connexion.php'); ?>
         </div>

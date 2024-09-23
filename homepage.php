@@ -25,12 +25,14 @@ require_once(__DIR__.'/apps/finance_app/total_calculated.php');  ?>
             <img src="images/home_btn.png" alt="">
              <p class="titre"><?php echo $_SESSION['LOGGED_USER']?></p> 
         </div>
+    <!-- Display expenses from Expenses page -->
         <section class="display_expenses_hp">
             <div class="expenses">
                 <h3><?php echo $redevable.' doit '.$sommeargent.' € à '.$nonredevable ?> </h3>
             </div>
         </section>
     </section>
+    <!-- Display lists from Shopping page -->
     <a href="apps/shopping_app/shopping.php"><?php require_once(__DIR__.'/apps/shopping_app/homepage_lists_shopping.php');  ?></a>
 </body>
 </html>

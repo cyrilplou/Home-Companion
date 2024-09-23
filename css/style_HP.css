@@ -1,3 +1,5 @@
+
+/* So far, there is no style for desktop or ipad. Only mobile*/
 @media (width < 800px){
 
 body{
@@ -7,7 +9,6 @@ body{
     justify-content: center;
     background-image: url(../images/mobile_bg.png);
     background-size: cover;
-
 }
 /* On/Off Button */
 .header{
@@ -75,6 +76,7 @@ body{
     font-size: 20px;
     margin-top: 5px;
 }
+
 /* Style for displayed Expenses */
 .display_expenses_hp{
     margin-top: 0px;
@@ -88,6 +90,7 @@ body{
     padding: 5px 10px;
     color:rgb(74, 94, 150);
 }
+
 /* Style for Displayed lists from Shopping Page */
 .articles{
     display: flex;
@@ -132,5 +135,8 @@ body{
     text-wrap: wrap;
 
 }
+
+
+
 
 }

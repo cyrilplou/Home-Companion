@@ -15,5 +15,10 @@
         </div>
         <button type="submit" id="btn-connexion">Connexion</button>
     </form>
+         <!-- <form action="users_inscription.php" method="post" class="form2" id="form2"> 
+        <input type="text" name="name_inscription" id="user_name" placeholder="Nom utilisateur" value="<?php if(isset($_COOKIE['LOGGED_USER'])) {echo $_COOKIE['LOGGED_USER'];} ?>">
+        <input type="password" name="pwd_inscription" id="user_pwd" placeholder="Mot de passe" value="<?php if(isset($_COOKIE['pwd'])) {echo $_COOKIE['pwd'];} ?>">
+              <button type="submit" id="btn-connexion">inscription</button>-->
+    </form>
 </body>
 </html>              

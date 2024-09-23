@@ -1,0 +1,8 @@
+body {
+    background-image: url(../../../images/mobile_bg.png);
+    background-size: cover;
+}
+
+#calendar {
+    height: 80vh;
+}

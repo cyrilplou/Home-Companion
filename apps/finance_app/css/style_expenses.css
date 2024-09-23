@@ -1,0 +1,156 @@
+@media (width < 800px){
+
+/* Style for Header in header_pages.php template */
+.header-pages{
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+.header-pages img{
+    width: 60px;
+    filter: drop-shadow(0px 1px 2px black);
+}
+.link{
+    position: relative;
+    left: 45%;
+}
+.btn-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-left: 35px;
+}
+
+.btn-home img{
+    width: 60px;
+    border-radius: 100px;
+}
+.titre{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+/* Style for Shopping Page */
+
+body {
+    background-image: url(../../../images/mobile_bg.png);
+    background-size: cover;
+}
+.header-apps{
+    margin-bottom: 20px;
+}
+.nav-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar a {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+}
+.nav-bar img{
+    width: 50px;
+    filter: drop-shadow(0px 1px 2px black);
+
+}
+.logo-shop{
+    width: 50px;
+    border-radius: 30px;
+    border: solid 2px  white;
+    box-shadow: 0px 1px 2px black;
+    background-color: orange;
+}
+.form_expense{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(1px 2px 3px black) ;
+
+}
+.form_expense input{
+    margin-top: 10px;
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.grp_form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.price{
+    width: 40px;
+
+}
+#for_who{
+    width: 60px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+
+}
+.form_expense button{
+    width: 80px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    height: 30px;
+}
+.container_exp{
+    margin-top: 50px;
+    height: 500px;
+    overflow: scroll;
+}
+.display_expenses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+
+}
+.fiches_expenses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-bottom: 10px;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 2px 0px 5px black;
+
+    
+}
+.fiches_expenses h2{
+    margin-top: 3px;
+    margin-bottom: 5px;
+    color: rgb(45, 66, 99);
+}
+.fiches_expenses p{
+    margin-top: 3px;
+    margin-bottom: 10px;
+
+}
+}

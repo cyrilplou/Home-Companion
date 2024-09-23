@@ -6,4 +6,3 @@ const MYSQL_NAME = 'hom-e';
 const MYSQL_USER = 'root';
 const MYSQL_PASSWORD = '';
 
-?>

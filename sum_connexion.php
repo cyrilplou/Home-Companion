@@ -4,16 +4,17 @@ session_start();
 require_once(__DIR__.'/functions.php'); 
 require_once(__DIR__.'/users_data.php'); 
 
-$dataUser = $_POST ;
+$username= $_POST['user_name'];
+$userpwd = $_POST['user_pwd'];
 
 if(!empty($_POST['chkbox'])){
-    setcookie('LOGGED_USER',$dataUser['user_name']);
-    setcookie('pwd',$dataUser['user_pwd']);
+    setcookie('LOGGED_USER',$username);
+    setcookie('pwd',$userpwd);
 };
-if(!isset($dataUser['user_name'])
-  ||!isset($dataUser['user_pwd'])
-  || empty($dataUser['user_pwd'])
-  || empty($dataUser['user_name'])
+if(!isset($username)
+  ||!isset($userpwd)
+  || empty($userpwd)
+  || empty($username)
 )
 {
     redirectToUrl('index.php');
@@ -21,12 +22,12 @@ if(!isset($dataUser['user_name'])
 else {
     foreach($users as $user){
         if(
-            $user['user_name'] === $dataUser['user_name'] &&
-            $user['user_pwd'] === $dataUser['user_pwd']
+            $user['user_name']=== $username  &&
+            $user['user_pwd']=== $userpwd
             
         )
         {
-            $_SESSION['LOGGED_USER'] = $user['user_name'];
+            $_SESSION['LOGGED_USER'] = $username;
             redirectToUrl('homepage.php');
 
           

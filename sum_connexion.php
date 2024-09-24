@@ -5,12 +5,12 @@ require_once(__DIR__.'/functions.php');
 require_once(__DIR__.'/users_data.php'); 
 
 $username= $_POST['user_name'];
-$userpwd = $_POST['user_pwd'];
+$userpwd= $_POST['user_pwd'];
 
-if(!empty($_POST['chkbox'])){
-    setcookie('LOGGED_USER',$username);
-    setcookie('pwd',$userpwd);
-};
+
+
+// WARNING, there is no password hash actualy. Make sure to put one before deployement //
+
 if(!isset($username)
   ||!isset($userpwd)
   || empty($userpwd)
@@ -23,10 +23,14 @@ else {
     foreach($users as $user){
         if(
             $user['user_name']=== $username  &&
-            $user['user_pwd']=== $userpwd
+            password_verify($userpwd , $user['user_pwd'])
             
         )
         {
+            if(!empty($_POST['chkbox'])){
+                setcookie('LOGGED_USER',$username);
+                setcookie('pwd',$userpwd);
+            };
             $_SESSION['LOGGED_USER'] = $username;
             redirectToUrl('homepage.php');
 

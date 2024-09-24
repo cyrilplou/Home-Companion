@@ -1,3 +1,5 @@
+
+/* So far, there is no style for desktop or ipad. Only mobile*/
 @media (width < 800px){
 
 body{
@@ -7,7 +9,6 @@ body{
     justify-content: center;
     background-image: url(../images/mobile_bg.png);
     background-size: cover;
-
 }
 /* On/Off Button */
 .header{
@@ -63,18 +64,62 @@ body{
     margin-bottom: -20px;
 
 }
-.btn-home img{
+/* .btn-home img{
     
     width: 150px;
     border-radius: 100px;
     box-shadow: 0px 2px 5px black;
+    animation :4s linear 0s  rotate;
+    animation-duration: 2000ms ;
+    animation-fill-mode: forwards;
+
+} */
+.imglogo{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    box-shadow: 0px 2px 5px black;
+    border: solid 3px white;
+    background-image: url(../images/home_btn.png);
+    background-size: cover;
+    animation-fill-mode: forwards;
 }
+.imglogostate2{
+    animation :4s linear 0s  rotate;
+    animation-duration: 2000ms ;
+    animation-fill-mode: forwards;
+
+}
+.imglogostate3{
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    border: solid 3px rgb(58, 74, 117);
+    box-shadow: 0px 2px 5px black;
+    background-image: url(../images/meteolyon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@-webkit-keyframes rotate {
+    0% {
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    50% {
+        transform: rotate3d(0, 1, 0, 90deg);
+    }
+    100% {
+        transform: rotate3d(0, 1, 0, 180deg);
+
+    }
+  }
+
 .titre{
     color: white;
     font-weight: bold;
     font-size: 20px;
     margin-top: 5px;
 }
+
 /* Style for displayed Expenses */
 .display_expenses_hp{
     margin-top: 0px;
@@ -88,6 +133,7 @@ body{
     padding: 5px 10px;
     color:rgb(74, 94, 150);
 }
+
 /* Style for Displayed lists from Shopping Page */
 .articles{
     display: flex;
@@ -132,5 +178,8 @@ body{
     text-wrap: wrap;
 
 }
+
+
+
 
 }

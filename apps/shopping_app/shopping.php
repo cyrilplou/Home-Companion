@@ -12,7 +12,7 @@
         <?php require_once(__DIR__."../../header_pages.php"); ?>
     </header>
     <div class="nav-bar">
-        <img src="../../images\courses.png" alt="logo shopping" class="logo-shop">
+        <img src="../../images\todo.png" alt="logo shopping" class="logo-shop">
     </div>
     <div id="formnewList">
         <form action="sum_creat_list.php"method="post" class="sum-list" >

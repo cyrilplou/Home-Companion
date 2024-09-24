@@ -19,7 +19,7 @@ $lists = $titleStatement->fetchAll();
         <?php require_once(__DIR__."../../header_pages.php"); ?>
     </header>
     <div class="nav-bar">
-        <img src="../../images\courses.png" alt="logo shopping" class="logo-shop">
+        <img src="../../images\todo.png" alt="logo shopping" class="logo-shop">
     </div>
     <section class="fiches-full" id="logoEdit">
         <h2><?php echo $title ?></h2>
@@ -30,7 +30,7 @@ $lists = $titleStatement->fetchAll();
        
     </section>
     <!-- Reset button to clear the list -->
-    <div class="btns_note">
+    <div class="btns_note" id="btns_note">
         <a href="shopping.php" ><img class="btn-add" src="../../images/add_btn.png" alt=""></a>
         <button class='btn-reset'type="" id="reset"></button>
         <form class="formReset"action="sum_reset_list.php" method="POST" id="submit_reset">
@@ -45,8 +45,9 @@ $lists = $titleStatement->fetchAll();
         <form action="sum_update_list.php" method="POST">
             <input type="text" name="namelist" id="listname" value="<?php echo $title ?>">
             <textarea name="update-list" class="update-list" id="updatesList" ><?php echo $list['list'] ?></textarea>
-            <input type="checkbox" name ="btn_delete"class="btn_delete_list" value="yes"><label for="">Supprimer la liste</label>
-            <button id="btnEdit" type="submit"><img src="../../images/picto_valide.png" alt=""></button>  
+            <button id="btnEdit" type="submit"><img src="../../images/picto_valide.png" alt=""></button> 
+            <!-- <input type="checkbox" name ="btn_delete"class="btn_delete_list" value="yes"><label for="">Supprimer la liste</label> -->
+ 
         </form>
     </section>
     

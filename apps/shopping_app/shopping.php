@@ -15,7 +15,8 @@
         <img src="../../images\todo.png" alt="logo shopping" class="logo-shop">
     </div>
     <div id="formnewList">
-        <form action="sum_creat_list.php"method="post" class="sum-list" >
+    <form action="sum_creat_list.php"method="post" class="sum-list" >
+            <input type="checkbox" name="private" id="private" value="1">
             <input type="text" name="newListName" placeholder="Créer une liste">
             <button id="btncreat" type="submit"><img src="../../images/picto_valide.png" alt=""></button>
         </form>

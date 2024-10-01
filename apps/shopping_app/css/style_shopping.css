@@ -341,17 +341,18 @@ body {
     .fiches{
         display: flex;
         flex-direction: column;
-        width: 130px;
+        width: 200px;
         height: 300px;
         margin: 10px 15px;
         border-radius: 10px;
+        padding: 10px 20px;
         background-color: rgb(244, 247, 255);
         box-shadow: 0px 1px 2px black;
     
     }
     .fiches h2{
        color:rgb(74, 94, 150);
-       font-size: 1rem;
+       font-size: 2rem;
        text-align: center;
        margin-bottom: 2px;
     
@@ -359,7 +360,7 @@ body {
     .fiches p{
 
         margin-top: 2px;
-        font-size: 15px;
+        font-size: 1.5rem;
         padding-left: 5px;
     }
     
@@ -367,14 +368,13 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width:80% ;
+        width:50% ;
         height: 400px;
         margin-top: 10px;
-        margin-left: 41px;
-        margin-right: 35px;
+        margin-left: auto ;
+        margin-right: auto ;
         border-radius: 10px;
         background-color: rgb(244, 247, 255);
-        overflow: scroll;
     }
     .fiches-full h2{
         color: rgb(74, 94, 150);
@@ -454,7 +454,7 @@ body {
     }
     .container-form{
         position: absolute;
-        top: 40%; left: 51.5%;
+        top: 35%; left: 51.5%;
         transform: translate(-50%, -50%);
         display: flex;
         flex-direction: column;
@@ -472,9 +472,9 @@ body {
     }
     .update-list{
         font-size: 20px;
-        height: 150px;
-        width: 260px;
-        margin-top: 230px;
+        height: 200px;
+        width: 600px;
+        margin-top: 0px;
     
     }
     #listname{

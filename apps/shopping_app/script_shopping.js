@@ -20,3 +20,5 @@ logoEdit.addEventListener("click", ()=>{
 revealReset.addEventListener("click", () =>{
     btnsubmitreset.style.display='';
 })
+
+

@@ -27,6 +27,7 @@ else {
             
         )
         {
+            $_SESSION['id'] = $user['id'];
             if(!empty($_POST['chkbox'])){
                 setcookie('LOGGED_USER',$username);
                 setcookie('pwd',$userpwd);

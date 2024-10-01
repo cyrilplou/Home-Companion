@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const calendarEl = document.getElementById('calendar')
     
     const calendar = new FullCalendar.Calendar(calendarEl, {
+      
       events : [
         {
-            title :'event test',
+            title :'Soirée ceci',
             start : '2024-09-09'
         },
         {
@@ -12,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             start : '2024-10-09'
         },
       ],
+      eventColor: '#378006',
       eventClick: function(info) {
         alert('Event: ' + info.event.title);
         

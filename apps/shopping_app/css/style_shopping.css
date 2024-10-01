@@ -239,6 +239,9 @@ body {
     align-items: center;
     margin-top: 15px;
 }
+.sum-list input[type="checkbox"] {
+    width: 20px;
+}
 .sum-list input{
     height: 30px;
     border-radius: 5px;

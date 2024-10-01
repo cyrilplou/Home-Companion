@@ -255,3 +255,261 @@ body {
     width: 40px;
 }
 }
+
+@media (width > 900px){
+
+    /* Style for Header in header_pages.php template */
+    .header-pages{
+        height: 60px;
+        width: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    }
+    .header-pages img{
+        width: 60px;
+        filter: drop-shadow(0px 1px 2px black);
+    }
+    .link{
+        position: relative;
+        left: 45%;
+    }
+    .btn-home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+        margin-left: 35px;
+    }
+    
+    .btn-home img{
+        width: 60px;
+        border-radius: 100px;
+    }
+    .titre{
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    
+    /* Style for Shopping Page */
+    
+    body {
+        background-image: url(../../../images/desktop_bg2.jpg);
+        background-size: cover;
+    }
+    .header-apps{
+        margin-bottom: 20px;
+    }
+    .nav-bar{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-bar a {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 60px;
+    }
+    .nav-bar img{
+        width: 50px;
+        filter: drop-shadow(0px 1px 2px black);
+    
+    }
+    .logo-shop{
+        width: 50px;
+        border-radius: 30px;
+        border: solid 2px  white;
+        box-shadow: 0px 1px 2px black;
+        background-color: orange;
+    }
+    .articles{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .fiches{
+        display: flex;
+        flex-direction: column;
+        width: 130px;
+        height: 300px;
+        margin: 10px 15px;
+        border-radius: 10px;
+        background-color: rgb(244, 247, 255);
+        box-shadow: 0px 1px 2px black;
+    
+    }
+    .fiches h2{
+       color:rgb(74, 94, 150);
+       font-size: 1rem;
+       text-align: center;
+       margin-bottom: 2px;
+    
+    }
+    .fiches p{
+
+        margin-top: 2px;
+        font-size: 15px;
+        padding-left: 5px;
+    }
+    
+    .fiches-full{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:80% ;
+        height: 400px;
+        margin-top: 10px;
+        margin-left: 41px;
+        margin-right: 35px;
+        border-radius: 10px;
+        background-color: rgb(244, 247, 255);
+        overflow: scroll;
+    }
+    .fiches-full h2{
+        color: rgb(74, 94, 150);
+        
+    }
+    .fiches-full p{
+        align-self: baseline;
+        margin-left: 20px;
+        font-size: 1.5rem;
+    
+    }
+    .fiches-full a {
+        margin-top: 190px;
+        filter: drop-shadow(0px 1px 2px black);
+    }
+    .btns_note{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-add {
+        margin-top: 5px;
+        width: 50px;
+        transform: rotate(45deg);
+        filter: drop-shadow(0px 1px 3px black);
+        border: solid 2px white ;
+        border-radius: 50px;
+        background-color: rgb(255, 148, 9);
+    }
+    .btn-reset{
+        margin-top: 5px;
+        width: 53px;
+        height: 53px;
+        margin-left: 40px;
+        background-image: url(../../../images/reset.png);
+        background-size: cover ;
+        background-repeat: no-repeat;
+        border: solid 2px white ;
+        border-radius: 50px;
+        background-color: rgba(39, 235, 65, 1);
+        filter: drop-shadow(0px 1px 3px black);
+    
+    }
+    .formReset{
+        position: absolute;
+        top: 40%;
+        background-color: rgb(240, 144, 66);
+        border-radius: 5px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 10px;
+        align-items: center;
+        box-shadow: 3px 3px 5px black;
+    }
+    .formReset p {
+        margin-right: 10px;
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+    }
+    .edit-list{
+        width: 40px;
+        border-radius: 10px;
+        position: absolute;
+        right: 60px;
+        margin-top: 10px;
+    }
+    
+    .update form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+    .container-form{
+        position: absolute;
+        top: 40%; left: 51.5%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+    }
+    .container-form form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .update-list{
+        font-size: 20px;
+        height: 150px;
+        width: 260px;
+        margin-top: 230px;
+    
+    }
+    #listname{
+        display: none;
+    }
+    .container-form button{
+        margin: 20px 0px ;
+        height: 50px;
+        background-color: rgba(255,12, 26, 0);
+        border: none;
+    }
+    .container-form img{
+        width: 50px;
+        
+    }
+    .sum-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+    }
+    .sum-list input{
+        height: 30px;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-bottom: -10px;
+    }
+    .sum-list button {
+        background-color: rgba(255,12, 26, 0);
+        border: none;
+    
+    
+    }
+    .sum-list img{
+        width: 40px;
+    }
+    }

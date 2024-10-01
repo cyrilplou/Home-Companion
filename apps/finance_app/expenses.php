@@ -17,6 +17,8 @@ require_once(__DIR__.'/total_calculated.php');
     </header>
     <div class="nav-bar">
         <img src="../../images\compte.png" alt="logo shopping" class="logo-shop">
+        <p class="menu-desktop">Dépenses</p>
+
     </div>
     <form action="sum_creat_expense.php" class="form_expense" method="post">
         <input type="text" name="title_expense" id="title_expense" placeholder="Titre dépense">

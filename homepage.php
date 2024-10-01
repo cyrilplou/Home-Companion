@@ -17,9 +17,9 @@ require_once(__DIR__.'/apps/finance_app/total_calculated.php');  ?>
     </section>
     <section class="main">
         <div class="menu">
-            <a href=""><img src="images\agenda.png" alt="logo agenda" id="agenda"></a>
-            <a href="apps\finance_app\expenses.php"><img src="images\compte.png" alt="logo barre compte" id="compte"></a>
-            <a href="apps\shopping_app\shopping.php"><img src="images\todo.png" alt="logo courses" id="shopping"></a>
+            <a href="apps\receipes_app\receipes.php"><p class="menu-desktop">Recettes</p><img src="images\burgers.png" alt="logo burgers" id="agenda"></a>
+           <?php if($_SESSION["LOGGED_USER"] === "Cyril" ||$_SESSION["LOGGED_USER"] === "Mathilde" ) : ?> <a href="apps\finance_app\expenses.php"><p class="menu-desktop">Comptes</p><img src="images\compte.png" alt="logo barre compte" id="compte"></a> <?php endif ?>
+            <a href="apps\shopping_app\shopping.php"><p class="menu-desktop">To do lists</p><img src="images\todo.png" alt="logo courses" id="shopping"></a>
         </div>
         <div class="btn-home" id="btn-home">
             <div class='imglogo' id="imglogo"></div>
@@ -27,12 +27,14 @@ require_once(__DIR__.'/apps/finance_app/total_calculated.php');  ?>
              <p class="titre"><?php echo $_SESSION['LOGGED_USER']?></p> 
         </div>
     <!-- Display expenses from Expenses page -->
+    <?php if($_SESSION["LOGGED_USER"] === "Cyril" ||$_SESSION["LOGGED_USER"] === "Mathilde" ) : ?>
         <section class="display_expenses_hp">
             <div class="expenses">
                 <h3><?php  if ($sommeargent=== 0){echo 'Les comptes sont à jour.';} else { echo $redevable.' doit '.$sommeargent.' € à '.$nonredevable;} ?> </h3>
             </div>
         </section>
     </section>
+    <?php endif ?>
     <!-- Display lists from Shopping page -->
     <a href="apps/shopping_app/shopping.php"><?php require_once(__DIR__.'/apps/shopping_app/homepage_lists_shopping.php');  ?></a>
 </body>

@@ -177,7 +177,9 @@ body{
     text-wrap: wrap;
 
 }
-
+.menu-desktop{
+    display: none;
+}
 
 
 
@@ -222,13 +224,22 @@ body{
     
     }
     .menu img{
-        width: 100px;
-        margin-left: 30px;
-        margin-right: 30px;
-        border-radius: 100px;
-        border: solid 2px  white;
-        box-shadow: 0px 1px 2px black;
+        display: none;
+    }
+    .menu-desktop{
+        padding: 10px 25px ;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        color: rgb(36, 41, 71);
+        font-weight: 800;
         background-color: orange;
+        transition-duration: 500ms;
+
+    }
+    .menu-desktop:hover{
+        scale: 1.1;
+        transition-duration: 500ms;
     }
     #shopping{
         position: relative;

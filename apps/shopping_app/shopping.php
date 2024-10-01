@@ -13,6 +13,7 @@
     </header>
     <div class="nav-bar">
         <img src="../../images\todo.png" alt="logo shopping" class="logo-shop">
+        <p class="menu-desktop">To do lists</p>
     </div>
     <div id="formnewList">
     <form action="sum_creat_list.php"method="post" class="sum-list" >

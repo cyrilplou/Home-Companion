@@ -14,9 +14,9 @@ require_once(__DIR__.'/shopping_data.php');
 <section class="articles">
         <?php
         foreach($lists as $list): 
-        if(!empty($list['list'])) : if ($list['private'] === '0' || ( $list['author'] === $_SESSION['LOGGED_USER']) ) :
+        if(!empty($list['list'])): if ( $list['author'] === $_SESSION['LOGGED_USER'] || ($_SESSION['LOGGED_USER'] === "Cyril" && ($list['author'] === "Mathilde" && $list['private'] === '0')) ||($_SESSION['LOGGED_USER'] === "Mathilde" && ($list['author'] === "Cyril" && $list['private'] === '0'))) : ?> :
         
-        ?>
+
             <div class="fiches" onclick="window.location.href='page_list.php?title=<?php echo $list['title']; ?>'">
                 <h2><?php echo $list['title'] ?></h2>
                 <p><?php echo nl2br($list['list']) ?></p>

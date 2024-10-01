@@ -17,7 +17,7 @@ require_once(__DIR__.'/apps/finance_app/total_calculated.php');  ?>
     </section>
     <section class="main">
         <div class="menu">
-            <a href=""><img src="images\agenda.png" alt="logo agenda" id="agenda"></a>
+            <a href="apps/agenda_app/calendar.php"><img src="images\agenda.png" alt="logo agenda" id="agenda"></a>
             <a href="apps\finance_app\expenses.php"><img src="images\compte.png" alt="logo barre compte" id="compte"></a>
             <a href="apps\shopping_app\shopping.php"><img src="images\todo.png" alt="logo courses" id="shopping"></a>
         </div>

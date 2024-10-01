@@ -4,5 +4,13 @@ body {
 }
 
 #calendar {
-    height: 80vh;
+    height: 95vh;
+    color: white;
+    font-size: 0.8rem;
+}
+.fc-toolbar-chunk button {
+    display: flex;
+    flex-direction: row;
+    width: 5rem;
+    justify-content: center;
 }

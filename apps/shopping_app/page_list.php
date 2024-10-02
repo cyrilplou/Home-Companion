@@ -45,9 +45,10 @@ $lists = $titleStatement->fetchAll();
         <form action="sum_update_list.php" method="POST">
             <input type="text" name="namelist" id="listname" value="<?php echo $title ?>">
             <textarea name="update-list" class="update-list" id="updatesList" ><?php echo $list['list'] ?></textarea>
-            <button id="btnEdit" type="submit"><img src="../../images/picto_valide.png" alt=""></button> 
-            <!-- <input type="checkbox" name ="btn_delete"class="btn_delete_list" value="yes"><label for="">Supprimer la liste</label> -->
- 
+            <div class="valid-delete">
+                <button id="btnEdit" type="submit"><img src="../../images/picto_valide.png" alt=""></button>
+                <label for="">Supprimer la liste ?</label><input type="checkbox" name ="btn_delete"class="btn_delete_list" value="yes">
+            </div>
         </form>
     </section>
     

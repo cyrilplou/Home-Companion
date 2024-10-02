@@ -18,7 +18,6 @@ require_once(__DIR__.'/shopping_data.php');
                 <h2><?php echo $list['title'] ?></h2>
                 <p><?php echo nl2br($list['list']) ?></p>
             </div>
-
         <?php
         endif ?>
       <?php  endforeach ?>

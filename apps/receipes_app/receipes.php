@@ -30,7 +30,7 @@ require_once(__DIR__ . '/search.php');
     if ($recipe['is_enabled'] === 0 
         && empty($searchrec)): ?>
         <div id="fiche" class="fiches">
-            <h1> <?php echo $recipe['title'] ; ?> </h1>
+            <h1 class="h1"> <?php echo $recipe['title'] ; ?> </h1>
             <div class="img-recipe"><img  src="<?php echo $recipe['path_img']?>" alt=""></div>
             <div id="temps"><img src="images/chronometre.png" alt=""> <?php echo $recipe['time'].'min.'; ?>
             <img src="images/groupe.png" alt=""> <?php echo 'Pour '.$recipe['people'].' personnes'; ?>

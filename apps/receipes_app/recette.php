@@ -32,9 +32,9 @@ $recette = $idStatement->fetch();
 <body>
     <div class="fiche-recette">
         <div id="bandeauRecette"><img id="imgRecette" src="<?php echo ($recette['path_img']); ?>" alt="une image de la recette">
-        <h1 id="titreRecette"><?php echo ($recette['title']); ?> </h1>
+        <form action=""><h1 id="titreRecette"><?php echo ($recette['title']); ?> </h1>
         <h3 id="infosRecette">Prévue pour <?php echo ($recette['people']); ?> personnes.  Temps de préparation : <?php echo ($recette['time']); ?> minutes.</h3>
-        <p id="ingredients"> <strong>Les ingrédients :</strong> <?php echo $recette['ingredients']; ?></p>    
+        <p id="ingredients"> <strong>Les ingrédients :</strong> <?php echo $recette['ingredients']; ?></p> </form>   
     </div>
         <p id="recetteRecette">
         <?php echo ($recette['recipe']); ?> <br><a id="impression" href="#" onclick="javascript:window.print()"><img src="images/imprimante.png" alt=""></a></p>

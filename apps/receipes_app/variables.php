@@ -1,5 +1,7 @@
 <?php
 require_once(__DIR__.'../../../data_base_connect.php');
+require_once(__DIR__. '/search.php');
+
 ?>
 
 <?php 

@@ -14,6 +14,7 @@ require_once(__DIR__ . '/search.php');
     <script src="scriptIndex.js" defer></script>
 </head>
 <body >
+    <a href="soumettre.php"><img class="add-recipe" src="../../images/add_btn.png" alt=""></a>
     <?php require_once(__DIR__ . '/../header_pages.php'); ?> 
         <div id="search" class="search-bar">
             <form action="" id="searchForm" class="search-form" method="POST">
@@ -49,11 +50,11 @@ require_once(__DIR__ . '/search.php');
     if (isset($_SESSION['LOGGED_USER'])
     && !empty($searchrec)): ?>
       <div id="lesrecettes"> 
-        <div id="containerRecipe">
+        <div id="containerRecipe"class="container-recipes">
       <?php  foreach ($searchrecipes as $recipe) :  ?>
-        <div id="fiche">
+        <div id="fiche"class="fiches">
             <h1> <?php echo $recipe['title'] ; ?> </h1>
-            <div class="imgRecipe"><img  src="<?php echo $recipe['path_img']?>" alt=""></div>
+            <div class="img-recipe"><img  src="<?php echo $recipe['path_img']?>" alt=""></div>
             <div id="temps"><img src="images/chronometre.png" alt=""> <?php echo $recipe['time'].'min.'; ?>
             <img src="images/groupe.png" alt=""> <?php echo 'Pour '.$recipe['people'].' personnes'; ?></div>
             <p id="textRecipe"> <?php echo $recipe['extrait']; ?></p>

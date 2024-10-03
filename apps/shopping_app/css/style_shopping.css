@@ -8,6 +8,9 @@
     flex-direction: row;
 
 }
+.header-pages-desktop{
+    display: none;
+}
 .header-pages img{
     width: 60px;
     filter: drop-shadow(0px 1px 2px black);
@@ -283,19 +286,57 @@ body {
 }
 
 @media (width > 900px){
+    body{
+        margin: 0px;
+    }
 
     /* Style for Header in header_pages.php template */
     .header-pages{
+        display: none;
+    }
+    .logo-desktop{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 1rem;
+        top: 0.2rem;
+        border-radius: 50px;
+    }
+    .header-pages-desktop{
         height: 60px;
-        width: 100vh;
+        width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-    
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.76);    }
+    .desktop-hp-menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
     }
-    .header-pages img{
-        width: 60px;
-        filter: drop-shadow(0px 1px 2px black);
+    .desktop-hp-menu li {
+        font-weight: 700;
+        list-style-type: none;  
+        margin: 0px 25px;
+    }
+    .desktop-hp-menu a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: rgb(83, 71, 126);
+    }
+    .desktop-hp-menu a:hover{
+        color: rgb(120, 104, 175);
+
+    }
+    .deconnexion{
+        position: fixed;
+        top: 20px;
+        right: 2rem;
+        font-size: 1.2rem;
+        color: rgb(83, 71, 126);
+        font-weight: 700;
     }
     .link{
         position: relative;

@@ -12,6 +12,9 @@
     width: 60px;
     filter: drop-shadow(0px 1px 2px black);
 }
+.header-pages-desktop{
+    display: none;
+}
 .link{
     position: relative;
     left: 45%;
@@ -188,17 +191,9 @@ body {
 
     /* Style for Header in header_pages.php template */
     .header-pages{
-        height: 60px;
-        width: 100vh;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    
+        display: none;
     }
-    .header-pages img{
-        width: 60px;
-        filter: drop-shadow(0px 1px 2px black);
-    }
+   
     .link{
         position: relative;
     }
@@ -227,9 +222,54 @@ body {
     body {
         background-image: url(../../../images/desktop_bg2.jpg);
         background-size: cover;
+        margin: 0px;
     }
     .header-apps{
         margin-bottom: 20px;
+    }
+    .logo-desktop{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 1rem;
+        top: 0.2rem;
+        border-radius: 50px;
+    }
+    .header-pages-desktop{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.76);    }
+    .desktop-hp-menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+    }
+    .desktop-hp-menu li {
+        font-weight: 700;
+        list-style-type: none;  
+        margin: 0px 25px;
+    }
+    .desktop-hp-menu a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: rgb(83, 71, 126);
+    }
+    .desktop-hp-menu a:hover{
+        color: rgb(120, 104, 175);
+
+    }
+    .deconnexion{
+        position: fixed;
+        top: 20px;
+        right: 2rem;
+        font-size: 1.2rem;
+        color: rgb(83, 71, 126);
+        font-weight: 700;
     }
     .search-bar{
         margin-top: 50px;

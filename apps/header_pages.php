@@ -17,5 +17,14 @@
         <a href="../../index.php" class="link"><img src="../../images\on_off.png" alt="bouton on off"></a>
         
     </section>
-</body>
+    <section class="header-pages-desktop">
+        <a href="../../homepage.php"><img class="logo-desktop"src="../../images/home_btn.png" alt="logo hom-e"></a>
+        <ul class="desktop-hp-menu">
+            <li><a href="../../apps\receipes_app\receipes.php">La cuisine</a></li>
+            <li><a href="../../apps\finance_app\expenses.php">Comptes</a></li>
+            <li><a href="../../apps\shopping_app\shopping.php">To do lists</a></li>
+        </ul>
+        <a href="index.php" class="deconnexion">Déconnexion</a>
+        
+    </section>
 </html>

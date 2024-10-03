@@ -11,11 +11,13 @@ require_once(__DIR__ . '/search.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La cuisine du Panda</title>
     <link href="css/style_recipes.css" rel='stylesheet'>
+
     <script src="scriptIndex.js" defer></script>
 </head>
 <body >
     <a href="soumettre.php"><img class="add-recipe" src="../../images/add_btn.png" alt=""></a>
     <?php require_once(__DIR__ . '/../header_pages.php'); ?> 
+
         <div id="search" class="search-bar">
             <form action="" id="searchForm" class="search-form" method="POST">
             <input id="search" placeholder="'Chercher une recette, ingrédients." type="text"  name="search">

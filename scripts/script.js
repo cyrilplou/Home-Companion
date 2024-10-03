@@ -3,7 +3,7 @@
 let divConnexion = document.getElementById("connexion");
 let btnconnection = document.getElementById("btn-connexion");
 let btnhome = document.getElementById("btn-home");
-let form = document.getElementById("form");
+let form = document.getElementById("formconnexion");
 let logo = document.getElementById("imglogo");
 
 function bgchanger(){

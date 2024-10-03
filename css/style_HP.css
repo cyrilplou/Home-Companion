@@ -30,6 +30,15 @@ body{
     align-items: center;
     margin-top: 10%;
 }
+.logo-desktop{
+    display: none;
+}
+.desktop-hp-menu{
+    display: none;
+}
+.deconnexion{
+    display: none;
+}
 .menu{
     display: flex;
     flex-direction: row;
@@ -62,6 +71,9 @@ body{
     margin-top: 30px;
     margin-bottom: -20px;
 
+}
+.btn-home-desktop {
+    display: none;
 }
 /* .btn-home img{
     
@@ -142,6 +154,9 @@ body{
     flex-wrap: wrap;
 
 }
+.display-desktop{
+    display: none;
+}
 .fiches{
     display: flex;
     flex-direction: column;
@@ -155,7 +170,7 @@ body{
     box-shadow: 0px 1px 2px black;
     pointer-events: none;
 }
- a{
+.fiches-mobile{
     text-decoration: none;
 }
 .fiches h2{
@@ -180,7 +195,9 @@ body{
 .menu-desktop{
     display: none;
 }
-
+.display-desktop{
+    display: none;
+}
 
 
 }
@@ -195,19 +212,26 @@ body{
         justify-content: center;
         background-image: url(../images/desktop_bg2.jpg);
         background-size: cover;
+        margin: 0px;
+
     }
     /* On/Off Button */
     .header{
         height: 60px;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
+        background-color: rgba(255, 255, 255, 0.76);
+
     }
     .header img{
-        width: 60px;
-        margin-right: 36px;
-        filter: drop-shadow(0px 1px 2px black);
+        display: none;
+    }
+    .logo-desktop{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 1rem;
+        top: 0.2rem;
+        border-radius: 50px;
     }
     /* Main Section with logo annd navbar */
     .main{
@@ -217,29 +241,37 @@ body{
         align-items: center;
     }
     .menu{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        display: none;
     
     }
-    .menu img{
-        display: none;
+    .desktop-hp-menu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
     }
-    .menu-desktop{
-        padding: 10px 25px ;
-        border-radius: 10px;
-        margin-left: 20px;
-        margin-right: 20px;
-        color: rgb(36, 41, 71);
-        font-weight: 800;
-        background-color: orange;
-        transition-duration: 500ms;
+    .desktop-hp-menu li {
+        font-weight: 700;
+        list-style-type: none;  
+        margin: 0px 25px;
+    }
+    .desktop-hp-menu a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: rgb(83, 71, 126);
+    }
+    .desktop-hp-menu a:hover{
+        color: rgb(120, 104, 175);
 
     }
-    .menu-desktop:hover{
-        scale: 1.1;
-        transition-duration: 500ms;
+    .deconnexion{
+        position: absolute;
+        top: 20px;
+        right: 2rem;
+        font-size: 1.2rem;
+        color: rgb(83, 71, 126);
+        font-weight: 700;
     }
     #shopping{
         position: relative;
@@ -248,62 +280,68 @@ body{
         position: relative;
     }
     .btn-home{
+        display: none ;
+    
+    }
+    .btn-home-desktop{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-        margin-bottom: -20px;
-    
     }
-    /* .btn-home img{
+    .btn-home-desktop h2{
+        color: white;
+        font-size: 5rem;
+        font-style: italic;
+        text-decoration: underline 2px;
+        animation-name: opacity;
+        animation-duration: 3500ms;
+
+    }
+    
+    @keyframes opacity{
+        from{
+            opacity: 0;
+            transform: translateX(-100px);        }
+        to{
+            opacity: 1;
+            transform: translateX(0);
+        }
         
-        width: 150px;
-        border-radius: 100px;
-        box-shadow: 0px 2px 5px black;
-        animation :4s linear 0s  rotate;
-        animation-duration: 2000ms ;
-        animation-fill-mode: forwards;
-    
-    } */
-    .imglogo{
-        width: 150px;
-        height: 150px;
-        border-radius: 100px;
-        box-shadow: 0px 2px 5px black;
-        border: solid 3px white;
-        background-image: url(../images/home_btn.png);
-        background-size: cover;
-        animation-fill-mode: forwards;
     }
-    .imglogostate2{
-        animation :4s linear 0s  rotate;
-        animation-duration: 2000ms ;
-        animation-fill-mode: forwards;
-    
+    @keyframes opacity2{
+        0%{
+            opacity: 0;
+                   }
+        20% {
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+           
+        }
+        
     }
-    .imglogostate3{
-        width: 150px;
-        height: 150px;
-        border-radius: 100px;
-        border: solid 3px rgb(58, 74, 117);
-        box-shadow: 0px 2px 5px black;
-        background-image: url(../images/meteolyon.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+    @keyframes translatey{
+        from{
+            opacity: 0;
+            transform: translateY(100px);        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
-    @-webkit-keyframes rotate {
-        0% {
-            transform: rotate3d(0, 1, 0, 0deg);
-        }
-        50% {
-            transform: rotate3d(0, 1, 0, 90deg);
-        }
-        100% {
-            transform: rotate3d(0, 1, 0, 180deg);
-    
-        }
-      }
+    .btn-home-desktop h3{
+        color: white;
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        margin-left: 1.5rem;
+        animation-name: opacity2;
+        animation-duration: 5000ms;
+        
+        
+
+    }
+  
     
     .titre{
         color: white;
@@ -312,9 +350,15 @@ body{
         margin-top: 5px;
     }
     
+    
     /* Style for displayed Expenses */
     .display_expenses_hp{
-        margin-top: 0px;
+        position: absolute;
+        text-align: center;
+        width: 20vw;
+        max-width: 250px;
+        left: 3rem;
+        top: 5rem;
     }
     .expenses{
         border-radius: 5px;
@@ -323,32 +367,95 @@ body{
     }
     .expenses h3 {
         padding: 5px 10px;
+        font-size: 1rem;
         color:rgb(74, 94, 150);
     }
     
     /* Style for Displayed lists from Shopping Page */
+   
     .articles{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        padding-bottom: 3rem;
+    
+    }
+    .fiches-mobile{
+        display: none;
+    }
+    .display-desktop{
+        display: flex;
+        flex-direction: row;
+        width: 80vw;
+        gap: 2rem;
+        animation: opacity2;
+        animation-duration: 1000ms;
+    }
+    .desktop-hp-recipes{
+        width: 70%;
+        background-color: rgba(255, 255, 255, 0.486);
+        border-radius: 20px;
+        flex-direction: column;
+        display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-    
+    }
+    .desktop-hp-lists{
+        width: 30%;
+        background-color: rgba(255, 255, 255, 0.486);
+        border-radius: 20px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        right: 2vw;
+    }
+    .desktop-hp-lists a{
+        margin-top: 2rem;
+    }
+    .vege{
+        width: 15%;
+        height: auto;
+        border-radius: 100px;
+        margin-top: -3rem;
+        margin-bottom: 1rem;
+    }
+    .tout-voir{
+        text-decoration: none;
+        background-color: rgb(92, 92, 139);
+        padding: 3px 10px;
+        color: white;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.534);
+        border-radius: 5px;
+        font-weight: 500;
+        margin-bottom: 2rem;
+        width: 4rem;
     }
     .fiches{
         display: flex;
         flex-direction: column;
-        width: 150px;
-        height: 200px;
-        margin: 10px 5px;
+        width: 80%;
+        height: 10rem;
+        margin-top: 1rem;
+
         border-radius: 10px;
         overflow: hidden;
         white-space: nowrap;
         background-color: rgb(244, 247, 255);
         box-shadow: 0px 1px 2px black;
         pointer-events: none;
+        transition-duration: 500ms;
+        animation-name: translatey;
+        animation-duration: 1500ms;
+        animation-delay: 200ms;
     }
-     a{
+    .fiches:hover{
+        scale: 1.1;
+        transition-duration: 500ms;
+    }
+    a{
         text-decoration: none;
     }
     .fiches h2{
@@ -370,8 +477,54 @@ body{
         text-wrap: wrap;
     
     }
+    .fiches-recipes{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        padding: 0px 20px;
+        padding-bottom: 10px;
+        background-color: rgb(244, 247, 255);
+        border-radius: 20px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.534);
+        transition-duration: 500ms;
+        animation-name: translatey;
+        animation-duration: 1500ms;
+
+    }
+    .fiches-recipes:hover{
+        scale: 1.05;
+        transition-duration: 500ms;
+    }
+    .img-recipe{
+        width: 17vw;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .img-recipe img{
+        width: auto;
+        min-width:20vw;
+        height: auto;
+
+    }
+    .fiches-recipes button{
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(111, 111, 167);
+        padding: 3px 10px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.534);
     
     
+    }
+    .fiches-recipes button a {
+        text-decoration: none;
+        color: white;
+    
+    }
     
     
     }

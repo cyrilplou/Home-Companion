@@ -340,7 +340,7 @@ body {
         font-size: 1.5rem;
     }
     .img-recipe{
-        width: 350px;
+        width: 30vw;
         height: 200px;
         display: flex;
         justify-content: center;
@@ -349,11 +349,23 @@ body {
     }
     .img-recipe img{
         width: auto;
-        height: 200px
+        height: 200px;
+
 
     }
+    .fiches button{
+        border-radius: 5px;
+        border: none;
+        background-color: rgb(111, 111, 167);
+        padding: 3px 10px;
+        box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.534);
+    
+    
+    }
     .fiches button a {
+        
         text-decoration: none;
+        color: white;
     }
     .add-recipe{
         width: 50px;
